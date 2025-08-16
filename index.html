@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WisdomBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-app">
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input-container">
+                <div class="chat-input-area">
+                    <button id="uploadBtn" class="icon-btn" title="Upload File">📎</button>
+                    <button id="recordBtn" class="icon-btn" title="Record Audio">🎙️</button>
+                    <textarea id="userInput" placeholder="Ask WisdomBot anything..." rows="1"></textarea>
+                    <button id="sendBtn" class="send-btn">➤</button>
+                </div>
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="file" id="fileInput" accept=".txt" style="display: none;">
+    <script src="script.js"></script>
+</body>
+</html>
